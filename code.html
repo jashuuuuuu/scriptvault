@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScriptVault - Sell Story Scripts for Videos & Gaming</title>
+    <meta name="description" content="Buy custom story scripts for short videos, long-form content, gaming, and more. Professional scripts for creators.">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background-color: #007bff; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #333; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        .hero { padding: 50px; text-align: center; background-color: #e9ecef; }
+        .scripts { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 20px; }
+        .script { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .script h3 { margin-top: 0; }
+        .buy-btn { background-color: #28a745; color: white; padding: 10px; border: none; cursor: pointer; width: 100%; }
+        footer { background-color: #333; color: white; text-align: center; padding: 10px; }
+        form { max-width: 400px; margin: 20px auto; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; }
+        button { background-color: #007bff; color: white; padding: 10px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ScriptVault</h1>
+        <p>Professional Story Scripts for Shorts, Long Videos, Gaming, and More</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#scripts">Scripts</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="home" class="hero">
+        <h2>Unlock Your Next Story</h2>
+        <p>Browse and buy ready-made scripts for your videos and games. From quick shorts to epic narratives.</p>
+        <a href="#scripts" class="buy-btn">Browse Scripts</a>
+    </section>
+    
+    <section id="scripts">
+        <h2 style="text-align: center; padding: 20px;">Available Scripts</h2>
+        <div class="scripts">
+            <div class="script">
+                <h3>Short Video Script: Mystery Thriller</h3>
+                <p>A 5-minute script for social media shorts. Twist ending included.</p>
+                <p>Price: $10</p>
+                <button class="buy-btn" onclick="alert('Redirect to payment gateway')">Buy Now</button>
+            </div>
+            <div class="script">
+                <h3>Long Video Script: Sci-Fi Adventure</h3>
+                <p>Full 30-minute script for YouTube or streaming. Includes character arcs.</p>
+                <p>Price: $50</p>
+                <button class="buy-btn" onclick="alert('Redirect to payment gateway')">Buy Now</button>
+            </div>
+            <div class="script">
+                <h3>Gaming Script: RPG Quest</h3>
+                <p>Interactive story outline for indie games. Customizable for your engine.</p>
+                <p>Price: $30</p>
+                <button class="buy-btn" onclick="alert('Redirect to payment gateway')">Buy Now</button>
+            </div>
+            <!-- Add more scripts as needed -->
+        </div>
+    </section>
+    
+    <section id="about" style="padding: 20px; text-align: center;">
+        <h2>About Us</h2>
+        <p>ScriptVault is run by experienced writers specializing in video and gaming narratives. We create engaging stories to bring your projects to life.</p>
+    </section>
+    
+    <section id="contact" style="padding: 20px; background-color: #e9ecef;">
+        <h2 style="text-align: center;">Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 ScriptVault. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Basic form submission (replace with real backend like Formspree or Netlify Forms)
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! We\'ll get back to you soon.');
+        });
+    </script>
+</body>
+</html>
